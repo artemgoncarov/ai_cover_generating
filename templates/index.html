@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ИИ для генерации обложки для видео</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Kanit&family=Libre+Baskerville:ital@1&family=Lobster&family=Merriweather&family=Oswald&family=Roboto:wght@500&family=Ultra&family=Young+Serif&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+<section class="generate_img">
+    <div class="glav_text">
+        <h1 class="glav_h1">Добро пожаловать! Это ИИ для генерации обложек на ваши видео</h1>
+    </div>
+
+    <form method="POST" class="form">
+        <div class="text_form"></div>
+        <h1 class="form_h1">Заполните анкету и мы сгенерируем вам обложку</h1>
+
+        <div class="labels">
+            <div class="label1">
+                <label for="link" class="labels_text fname">Ссылка на видео:</label><br>
+                <input type="text" id="link" class="labels_input" name="link">
+            </div>
+
+            <div class="label5">
+                <label for="description" class="labels_text lname">Описание видео:</label><br>
+                <input type="text" id="description" class="labels_input" name="description">
+            </div>
+
+            <div class="label2">
+                <label for="wish" class="labels_text lname">Ваши предпочтнения:</label><br>
+                <input type="text" id="wish" class="labels_input" name="wish">
+            </div>
+
+            <div class="label3">
+                <label for="text" class="labels_text text">Текст для картинки:</label><br>
+                <input type="text" id="text" class="labels_input" name="text">
+            </div>
+
+            <div class="label4">
+                <label for="category" class="labels_text style_text">Выберите стиль вкотром хотите сгенерировать картинку:</label><br>
+                <select name="category" id="category">  
+                    <option value="realistic">Реалистичная</option>
+                    <option value="anime" selected>Аниме</option>
+                    <option value="3d">3d</option>
+                </select>
+            </div>
+            <input type="submit" value="Генерировать" class="submit">
+
+        </div>
+
+    </form>
+</section>
+<footer>
+    <div class="about_us">
+        <h2>Разработчики:</h2>
+    </div>
+</footer>
+
+</body>
+
+</html>
